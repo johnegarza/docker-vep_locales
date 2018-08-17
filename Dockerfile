@@ -1,8 +1,10 @@
-FROM mgibio/vep:v90
+FROM ubuntu:xenial
 MAINTAINER John Garza <johnegarza@wustl.edu>
 
 LABEL \
-    description="VEP image with the locale bugfix applied"
+    description="VEP image with the locale bugfix applied"i
+
+RUN apt-get update
 
 RUN mkdir /opt/vep/
 WORKDIR /opt/vep
