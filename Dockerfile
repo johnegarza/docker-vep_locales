@@ -4,7 +4,7 @@ MAINTAINER John Garza <johnegarza@wustl.edu>
 LABEL \
     description="VEP image with the locale bugfix applied"
 
-UN mkdir /opt/vep/
+RUN mkdir /opt/vep/
 WORKDIR /opt/vep
 
 RUN git clone https://github.com/Ensembl/ensembl-vep.git
